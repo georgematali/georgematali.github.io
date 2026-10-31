@@ -1,14 +1,23 @@
+@font-face { font-family: Carlito; font-weight: 400; src: url("fonts/carlito-latin-regular.woff2") format("woff2"); }
+@font-face { font-family: Carlito; font-weight: 700; src: url("fonts/carlito-latin-bold.woff2") format("woff2"); }
+
+* {
+  font-size: inherit;
+}
+
 body {
-  max-width: 60rem;
+  max-width: 88rem;
   margin: 0 auto;
-  padding: 2.5rem 1rem;
+  padding: 2.5rem 3rem 3rem;
   font-family: Carlito, Calibri, sans-serif;
   font-size: 17px;
   line-height: 1.5;
 }
+
 h1, h2, p, ul {
   margin: 0;
 }
+
 a {
   color: inherit;
 }
@@ -19,4 +28,31 @@ h2 {
   border-bottom: 1px solid #1a1a1a;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+.line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 1rem;
+}
+
+.when {
+  white-space: nowrap;
+}
+
+.entry {
+  margin-bottom: 0.6rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+header {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 40rem) {
+  body { padding-left: 1rem; padding-right: 1rem; }
 }
